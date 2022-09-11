@@ -32,18 +32,20 @@ body {
    Make a scrollbar with the content
 }
 */
+
+.containerOne {
+    border: 2px dashed red;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
 .capTwo {
     border: 2px dashed blue;
-    width: 40%;
     font-size: 3rem;
     padding: 0.3em;
 }
 
-
-.loremTwo {
-    font-size: 2rem;
-    width: 40ch;
-}
+  
 /* 
 16px = 1rem 
 1em = last quantity
