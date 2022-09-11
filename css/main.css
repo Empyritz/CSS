@@ -58,10 +58,17 @@ body {
     outline-offset: 0.25rem;
 }
 
-  
+.loremThree {
+    text-indent: 1.5em;
+    text-decoration: underline;
+    text-transform: capitalize;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Roboto', sans-serif;
+}
 /* 
 16px = 1rem 
 1em = last quantity
 */
-
-
