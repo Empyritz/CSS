@@ -257,15 +257,16 @@ ul li:nth-child(2){
 .outer-container {
     border: 3px dashed #000;
     width: 75vw;
-    height: 85vh;
+    height: 55vh;
     margin: 40px auto;
+    position: relative;
 }
 
 
 .inner-container {
     border: 2px solid #00f;
     width: 40vw;
-    height: 50vh;
+    height: 20vh;
     margin: 200px auto;
 }
 
@@ -278,13 +279,6 @@ ul li:nth-child(2){
     border-radius: 50px;
     text-align: center;
     line-height: 1rem;
-}
-
-/* ------------------ */
-
-
-.outer-container {
-    position: relative;
 }
 
 .absolute {
@@ -322,4 +316,112 @@ ul li:nth-child(2){
     width: 90px;
     height: 50px;
     bottom: 0;
+}
+
+/* ------------------ */
+
+.flexContainer {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*flex-direction: row-reverse;*/
+    flex-flow: row-reverse wrap-reverse;
+    /* align-content: center; */
+}
+
+.flexBox {
+    min-width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+.flexBox:nth-child(2) {
+    flex: 2 2 150px;
+    order: 4;
+}*/
+
+/* ------------------ */
+
+
+.gridFatherContainer{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn sb sb"
+        "ft ft ft ft ft ft ft ft ft";
+        gap: 1rem;
+}
+
+
+.el {
+    color: #fff;
+    display: grid;
+    place-content: center;
+}
+
+
+.header {
+    grid-area: hd;
+    background-color: azure;
+    display: grid;
+    place-content: center;
+
+}
+
+
+.sidebar{
+    grid-area: sb;
+    background-color: #00f;
+}
+
+
+.footer {
+    grid-area: ft;
+    background-color: #432f43;
+}
+
+.gridContainer {
+    grid-area: mn;
+    min-height: 200px;
+    color: #fff;
+    font-size: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 1em 0.5em;
+}
+
+
+.gridBox {
+    background-color: #000;
+    display: inherit;
+    place-content: center;
+}
+
+
+.gridBox:first-child{
+    background-color: #299e19;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    display: inherit;
+    place-content: center;
+}
+
+.gridBox:nth-child(2){
+    background-color: palevioletred;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
 }
