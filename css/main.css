@@ -429,9 +429,6 @@ ul li:nth-child(2){
 /* ------------------ */
 
 
-/* Utility classes */
-
-
 .containerProfile {
     background-image: url("../img/f3.jpg");
     background-repeat: no-repeat;
@@ -491,3 +488,57 @@ ul li:nth-child(2){
 }
 
 /* ------------------ */
+
+/* Syntax: 
+//CSS Rules
+@media media type (condition: breakpoint){}*/
+
+
+.media  {
+    background-color: #475569;
+    background-image: radial-gradient(white, #475569);
+    display: flex;
+    flex-direction: column;
+}
+.media header, .media nav, .media main, .media footer  {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+.media header, .media footer {
+    position: sticky;
+    background-color: #1E293B;
+    color: whitesmoke;
+}
+.media header {
+    top: 0;
+}
+.media nav {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+.media main {
+    flex-grow: 1;
+}
+.media footer {
+    bottom: 0;
+}
+@media screen and (min-width: 576px) {
+    .media {
+        background-color: green;
+        background-image: radial-gradient(whitesmoke, green);
+    }
+    .media nav {
+        display: none;
+    }
+}
+@media screen and (max-width: 750px) {
+    .h4 {
+        font-size: 150%;
+    } 
+}
+/* {} */
