@@ -1,3 +1,4 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');*/
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 
 body {
     /* The body grows with the content, but with this use all the view hight and also grows with the content */
+    padding: 3rem;
     min-height: 100vh;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,4 +73,46 @@ body {
 /* 
 16px = 1rem 
 1em = last quantity
+*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:hover, a:focus {
+    color: rgb(212, 31, 194);
+    opacity: 0.5;
+    background: blue;
+}
+
+a:active {
+    color: red;
+}
+
+ol {
+    /*list-style-type: georgian;*/
+    list-style: none;
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: #432f43;
+    /*list-style-image: url();*/
+}
+
+ul li:nth-child(2){
+    color: #299e19;
+}
+/*odd and even 
+
+::marker {
+    color:#000;
+}
 */
