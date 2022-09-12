@@ -315,7 +315,7 @@ ul li:nth-child(2){
     background-color: #432f43;
     width: 90px;
     height: 50px;
-    bottom: 0;
+    top: 0;
 }
 
 /* ------------------ */
@@ -425,3 +425,69 @@ ul li:nth-child(2){
     grid-column: 1 / 5;
     grid-row: 3 / 4;
 }
+
+/* ------------------ */
+
+
+/* Utility classes */
+
+
+.containerProfile {
+    background-image: url("../img/f3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+.offscreen {
+    position: absolute;
+    left: -1000px;
+}
+
+.hero {
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: hsla(0, 0%, 0%, 0.118);
+    /* background-color: rgb(229, 127, 255); */
+}
+
+
+.h4 {
+    /* color: white; */
+    font-size: 300%;
+    /* text-shadow: 2px 2px 5px #000; */
+}
+
+
+.back{
+    background-image: url("../img/original.jpg");
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.pic-figure {
+    width: 35%;
+}
+
+.pic-figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+/* ------------------ */
