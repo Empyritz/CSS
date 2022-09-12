@@ -216,3 +216,63 @@ ul li:nth-child(2){
     /* overflow: auto; */
     display: flow-root; 
 }
+
+/* ------------------ */
+
+
+.columns {
+    columns: 4 250px;
+    column-gap: 3rem;
+    column-rule: 3px solid #333;
+    margin-bottom: 1.7rem;
+}
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;
+}
+
+.columns .quote {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+    column-span: all;
+}
+
+.nowrap {
+    white-space: nowrap ;
+}
+
+/* ------------------ */
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+}
+
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+}
+
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
