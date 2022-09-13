@@ -96,7 +96,7 @@ a:active {
     color: red;
 }
 
-ol {
+.capFive ol {
     /*list-style-type: georgian;*/
     list-style: none;
 }
@@ -556,12 +556,15 @@ ul li:nth-child(2){
 
 .media main {
     flex-grow: 1;
+    gap: min(2vh, 20px);
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px)); */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
-    gap: min(4vh, 15px);
-    padding: 20px;
+    
 }
 .media footer {
     bottom: 0;
@@ -584,6 +587,93 @@ ul li:nth-child(2){
     box-shadow: var(--shadows);
 }
 
+/* ------------------ */
+
+.bodyAnimate {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.mainAnimate {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+} 
+.aSquare {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    display: grid;
+    place-content: center; 
+}
+
+.aSquare:first-child {
+    background-color: dodgerblue;
+    /* transform: rotateX(92deg); */
+}
+.aSquare:nth-child(2){
+    background-color: yellow;
+    /* transform: rotateY(180deg); */
+}
+.aSquare:last-child {
+    background-color: purple;
+}
+
+.aSquare:hover {
+    background-color: midnightblue;
+    /* transition-property: background-color, transform;
+    transition-duration: 2s, 3s; 
+    transition-timing-function: linear;*/
+    transition: all 2s ;
+}
+.aSquare:last-child:hover {
+    /* transform: rotate(180deg); */
+}
+
+.animate {
+    /* animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: 2; */
+    animation: 5s ease-in-out 1s 2 normal forwards slide;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(300px) rotate(180deg);
+    }
+    66% {
+        transform: translateX(-300px) rotate(-180deg);
+    }
+    100% {
+        transform: translateX(0);
+        background-color: rebeccapurple;
+    }
+}
+/* ------------------ */
+
+:root{
+    --header-bgcolor: #333;
+    --header-color: whitesmoke;
+}
+
+.bodyMenu {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.headerMenu{
+    background-color: var(--header-bgcolor);
+    color: var(--header-color);
+}
 
 @media screen and (min-width: 576px) {
     .media {
